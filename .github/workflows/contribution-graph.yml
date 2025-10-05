@@ -1,0 +1,28 @@
+name: Generate Pacman contribution graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # ירוץ כל יום בחצות
+  workflow_dispatch:        # מאפשר להריץ ידנית דרך Actions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Pacman contribution graph
+        uses: Platane/snk@v3
+        with:
+          github_user_name: saharYaccov     # ← שים כאן את שם המשתמש שלך ב־GitHub
+          outputs: |
+            output/pacman-contribution-graph.svg
+            output/pacman-contribution-graph-dark.svg?palette=github-dark
+
+      - name: Push generated files
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: output
