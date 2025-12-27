@@ -71,15 +71,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=saharYaccov&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
 </div>
 
-###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/saharYaccov/saharYaccov/output/snake.png" alt="Snake animation" />
-
-![Pacman contribution graph](https://raw.githubusercontent.com/saharYaccov/saharYaccov/output/pacman-contribution-graph.svg#gh-light-mode-only)
-![Pacman contribution graph dark](https://raw.githubusercontent.com/saharYaccov/saharYaccov/output/pacman-contribution-graph-dark.svg#gh-dark-mode-only)
-
 
 ###
 
